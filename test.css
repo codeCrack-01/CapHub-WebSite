@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "TitleFont";
+    src: url("media/CfCrackAndBoldRegular-3jxp.ttf");
+}
+@font-face {
+    font-family: "GoodFont";
+    src: url('media/QuartzoBold-W9lv.ttf');
+}
+
+.myTitle {
+    text-align: center;
+    font-family: 'TitleFont';
+    font-size: 100px;
+}
+.myimg {
+    max-width: 10%;
+    height: auto;
+}
+
+.mycarouselImg {
+    max-width: 10%;
+    height: auto;
+    align-self: center;
+}
+
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.goodFont {
+    font-family: 'GoodFont';
+    text-align: center;
+
+    text-decoration:aliceblue;
+    font-size: 25px;
+}
+
+.icon {
+    max-width: 75%;
+    height: auto;
+}
+
+body {
+    background-image: url("media/bd.jpeg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.navEffect {
+    list-style: none;
+    display: inline-block;
+
+    margin: 0 20px;
+    position: relative;
+}
+.navEffect::after {
+    content: '';
+    transition: 0.5s;
+    
+    height: 3px;
+    width: 0;
+
+    background: #009688;
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+}
+
+.navEffect:hover::after {
+    width: 100%;
+}
